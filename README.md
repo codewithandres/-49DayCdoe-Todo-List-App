@@ -1,3 +1,6 @@
+![image](https://github.com/dizedesign/-49DayCdoe-Todo-List-App/assets/141795901/43a26cc5-c972-4cde-830b-90786b6cb9d9)
+
+
 # 📝 Proyecto de Lista de Tareas 📝
 
 Este es un proyecto de una lista de tareas (o "todo list") desarrollado en JavaScript. Permite a los usuarios agregar, editar y eliminar tareas, así como marcarlas como completadas.
