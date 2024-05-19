@@ -12,19 +12,20 @@ body {
     width: 100%;
     height: 100vh;
     overflow: hidden;
-    background: linear-gradient(135deg, #4AB1FF, #2D5CFE);
+    background: linear-gradient(135deg, hsl(205, 55%, 4%), hsl(227, 70%, 8%));
+    color: white;
 }
 
 ::selection {
     color: #fff;
-    background: #3C87FF;
+    background: hsl(219, 63%, 6%);
 }
 
 .wrapper {
     max-width: 405px;
     padding: 28px 0 30px;
     margin: 137px auto;
-    background: #fff;
+    background: hsl(220, 29%, 8%);
     border-radius: 7px;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
 }
@@ -35,11 +36,6 @@ body {
     position: relative;
 }
 
-.task-input img {
-    top: 50%;
-    position: absolute;
-    transform: translate(17px, -50%);
-}
 
 .task-input input {
     height: 100%;
@@ -47,13 +43,16 @@ body {
     outline: none;
     font-size: 18px;
     border-radius: 5px;
-    padding: 0 20px 0 53px;
-    border: 1px solid #999;
+    padding: 0 20px 0 30px;
+    background-color: transparent;
+    border: 1px solid hsl(0, 0%, 60%);
+    color: hsl(0, 0%, 90%);
+    transition: padding-left 300ms cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
 
 .task-input input:focus,
 .task-input input.active {
-    padding-left: 52px;
+    padding-left: 32px;
     border: 2px solid #3C87FF;
 }
 
@@ -128,12 +127,12 @@ li {
 }
 
 .task-box::-webkit-scrollbar-track {
-    background: #f1f1f1;
+    background: hsl(0, 0%, 54%);
     border-radius: 25px;
 }
 
 .task-box::-webkit-scrollbar-thumb {
-    background: #e6e6e6;
+    background: hsl(210, 2%, 23%);
     border-radius: 25px;
 }
 
@@ -185,13 +184,13 @@ li {
     right: -5px;
     bottom: -65px;
     padding: 5px 0;
-    background: #fff;
+    background: hsl(207, 37%, 11%);
     position: absolute;
     border-radius: 4px;
     transform: scale(0);
     transform-origin: top right;
     box-shadow: 0 0 6px rgba(0, 0, 0, 0.15);
-    transition: transform 0.2s ease;
+    transition: transform 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
 
 .task-box .task:last-child .task-menu {
@@ -222,7 +221,7 @@ li {
 }
 
 .settings li:hover {
-    background: #f5f5f5;
+    background: hsl(0, 0%, 39%);
 }
 
 .settings li i {
