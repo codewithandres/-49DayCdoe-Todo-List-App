@@ -169,6 +169,7 @@ li {
 
 .task label p.checked {
     text-decoration: line-through;
+    color: hsl(217, 100%, 62%);
 }
 
 .task-box .settings {
